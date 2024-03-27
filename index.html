@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="centered-container">
+    <div class="centered-content">
+    <img src="Logo.png" alt="Logo de la empresa">
+    <div class="container">
+        <h1>Cajero Automático</h1>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="userInput" class="form-label">Correo electrónico</label>
+                <input name="userMail" type="email" class="form-control" id="userInput" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Contraseña</label>
+                <input name="password" type="password" id="inputPassword" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+        </form>
+        <div id="options" style="display: none;">
+            <h2>Opciones disponibles:</h2>
+            <button onclick="checkBalance()">Consultar saldo</button>
+            <button onclick="depositAmount()">Ingresar monto</button>
+            <button onclick="withdrawAmount()">Retirar monto</button>
+        </div>
+    </div>
+    <script src="Js.js"></script>
+</body>
+</html>

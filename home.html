@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="Logo.png" alt="Logo de la empresa">
+    <div class="centered-content2">
+    <div class="container">
+        <h1>Inicio</h1>
+        <div id="accountInfo">
+            <h2>Información de la cuenta</h2>
+            <p id="accountMail"></p>
+            <p id="accountBalance"></p>
+        </div>
+        <div id="options">
+            <h2>Opciones disponibles:</h2>
+            <button onclick="checkBalance()">Consultar saldo</button>
+            <button onclick="depositAmount()">Ingresar monto</button>
+            <button onclick="withdrawAmount()">Retirar monto</button>
+            <button onclick="logout()">Cerrar sesión</button>
+        </div>
+    </div>
+    <script src="Js.js"></script>
+</body>
+</html>
+
